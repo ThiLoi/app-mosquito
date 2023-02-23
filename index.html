@@ -11,12 +11,14 @@
     <link rel="stylesheet" href="estilo.css">
 
     <script>
-        function() {
+        function iniciarJogo() {
             var nivel = document.getElementById('nivel').value
-            if(nivel === ' ') {
-                'Selecione um nível para iniciar o jogo'
+            if(nivel === '') {
+               alert('Selecione um nível para iniciar o jogo')
+               
+               return false
             }
-            return false
+            window.location.href = "app.html?" + nivel
         }
     </script>
 </head>
